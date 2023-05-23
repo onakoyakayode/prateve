@@ -30,7 +30,7 @@ const Navbar = () => {
         </ul>
         <Link className='px-[30px] py-[15px] flex gap-[15px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor rounded-[10px]' href="/CreateAccount">Get Started <ArrowForwardIcon /></Link>
     </nav>
-    <nav className='px-[10px] bg-secondaryColor relative h-[70px] flex flex-col border-b-textColor2/50 border items-start md:hidden font-Grotesk'>
+    <nav className='px-[10px] bg-secondaryColor relative h-[70px] flex flex-col shadow-lg shadow-primaryColor2/20 items-start md:hidden font-Grotesk'>
       <Image
           src={Logo}
           alt='prateve'

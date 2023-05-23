@@ -21,6 +21,7 @@ const SignIn = () => {
 
     const handleSendCode = () => {
       setResendCode(!resendCode)
+      setSendEmail(false)
     }
 
     const handleSuccessMsg = () => {
@@ -63,7 +64,7 @@ const SignIn = () => {
     }
 
   return (
-    <div className={`${styles.signIn} min-h-[100vh] h-[100%] py-[75px] md:py-[150px] px-[20px] md:px-[140px] flex flex-col md:flex md:flex-row items-start md:items-center gap-[50px] md:gap-0 justify-between relative`}>
+    <div className={`${styles.signIn} min-h-[100vh] h-[100%] w-[100%] py-[75px] md:py-[150px] px-[20px] md:px-[140px] flex flex-col md:flex md:flex-row items-start md:items-center gap-[50px] md:gap-0 justify-between relative`}>
     <div className='flex flex-col items-start'>
       <h1 className='text-textColorLight w-[100%] md:w-[592px] text-[40px] md:text-[64px] leading-[50px] md:leading-[70px] mb-[30px] md:mb-[50px]'>Your ideal life starts here...</h1>
     </div>
@@ -72,14 +73,14 @@ const SignIn = () => {
    {confirmation ? 
    <>
       <div className='h-[26px] flex items-center justify-between mb-[54px] font-Grotesk'>
-        <Link href="/InputDetails" className='flex gap-[5px] md:gap-[10px] items-center'>
+        <Link href="/InputDetails" className='flex gap-[3px] md:gap-[10px] items-center text-[13px] md:text-[15px]'>
           <KeyboardArrowLeftIcon />
           Back
         </Link>
-        <p className='text-[12px] flex items-center gap-[7px] font-normal'>Already have an account? <Link href="/CreateAccount" className='text-primaryColor'>Sign Up</Link></p>
+        <p className='text-[12px] flex items-center gap-[4px] md:gap-[7px] font-normal'>Already have an account? <Link href="/CreateAccount" className='text-primaryColor'>Sign Up</Link></p>
       </div>
         <div className='px-[0] md:px-[20px]'>
-          <h1 className='text-[#4A515C] text-[28px] md:text-[32px] mb-[15px]'>Welcome back!</h1>
+          <h1 className='text-[#4A515C] text-[24px] md:text-[32px] mb-[15px]'>Welcome back!</h1>
           <p className='text-[13px] md:text-[14px] text-textColor2 font-Grotesk mb-[30px]'>Please enter your login credentials to continue.</p>
           <form action="" className='flex flex-col items-start w-[full]'>
             <div className='relative flex flex-col items-start gap-[7px] font-Grotesk mb-[18px] w-[100%]'>
@@ -146,11 +147,9 @@ const SignIn = () => {
     }
     </>
     </div>
-
-      
       <>
         <div className={popup ? `fixed left-0 top-0 w-[100%] h-[100%] bg-textColor/10 `: "none"}>
-          <div className={popup ? `w-[90%] md:w-[420px] h-auto md:h-[390px] bg-secondaryColor rounded-[20px] px-[30px] py-[30px] md:py-[63px] fixed left-[5%] md:left-[55%] top-[35%]  ease-in-out duration-500` : "rounded-[20px] px-[30px] py-[30px] md:py-[63px] left-[200%] w-[90%] md:w-[420px] h-auto md:h-[390px] top-[35%] bg-secondaryColor fixed"}>
+          <div className={popup ? `w-[90%] md:w-[420px] h-auto md:h-[390px] bg-secondaryColor rounded-[20px] px-[30px] py-[30px] md:py-[63px] fixed left-[5%] md:left-[55%] top-[25%]  ease-in-out duration-500` : "rounded-[20px] px-[30px] py-[30px] md:py-[63px] left-[200%] w-[90%] md:w-[420px] h-auto md:h-[390px] top-[35%] bg-secondaryColor fixed"}>
             <CancelOutlinedIcon onClick={handlePopup} className='absolute right-[20px] top-[20px] text-negativeAlert cursor-pointer'/>
             <div className='flex flex-col items-center'>
               <Image src={emailIcon} alt='emailIcon' className='mb-[30px]'/>
@@ -166,7 +165,7 @@ const SignIn = () => {
       </>
       <>
           <div className={sendEmail ? `fixed left-0 top-0 w-[100%] h-[100%] bg-textColor/10 `: ""}>
-          <div className={sendEmail ? 'w-[90%] md:w-[420px] h-[390px] bg-secondaryColor rounded-[20px] z-40 px-[30px] py-[63px] absolute left-[5%] md:left-[55%] top-[35%] ease-linear duration-500' : "absolute bg-secondaryColor top-[35%] left-[200%] ease-linear duration-200"}>
+          <div className={sendEmail ? 'w-[90%] md:w-[420px] h-[390px] bg-secondaryColor rounded-[20px] z-40 px-[30px] py-[63px] absolute left-[5%] md:left-[55%] top-[25%] ease-linear duration-500' : "absolute bg-secondaryColor top-[35%] left-[200%] ease-linear duration-200"}>
           <CancelOutlinedIcon onClick={handleSendEmail} className='absolute right-[20px] top-[20px] text-negativeAlert cursor-pointer'/>
               <div className='flex flex-col items-center'>
                   <Image src={successIcon} alt="success" className='mb-[30px]' />

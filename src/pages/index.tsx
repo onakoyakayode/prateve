@@ -12,7 +12,7 @@ export default function Home() {
         <title>Prateve</title>
         <meta name="Prateve" content="Prateve Technology" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/prateveLogoFoooter.svg" />
       </Head>
       <>
         <Homepage/>

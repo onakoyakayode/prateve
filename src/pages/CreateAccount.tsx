@@ -25,7 +25,7 @@ const CreateAccount: React.FC = () => {
 
   return (
     <div className={`${styles.bg} min-h-[100vh] h-[100%] py-[75px] w-[100%] md:py-[150px] px-[20px] md:px-[140px] flex flex-col md:flex md:flex-row items-start md:items-center gap-[50px] md:gap-0 md:justify-between relative`}>
-      <div className='flex flex-col items-start w-[50%]'>
+      <div className='flex flex-col items-start w-[100%] md:w-[50%]'>
         <h1 className='text-textColorLight w-[100%] md:w-[349px] text-[40px] md:text-[64px] mb-[30px] md:mb-[60px]'>Save for Rainy Days!</h1>
         <div className='flex gap-[10px] items-center'>
           <div className='w-[10px] md:w-[13.6px] h-[10px] md:h-[13.6px] bg-secondaryColor rounded-[100%]'></div>
@@ -37,11 +37,11 @@ const CreateAccount: React.FC = () => {
        <> 
         {carousel ? <>
         <div className='h-auto md:h-[26px] flex items-center justify-between mb-[40px] md:mb-[54px] font-Grotesk'>
-          <Link href="/" className='flex gap-[5px] md:gap-[10px] items-center'>
+          <Link href="/" className='flex gap-[3px] md:gap-[10px] items-center text-[13px]'>
             <KeyboardArrowLeftIcon />
             Back
           </Link>
-          <p className='text-[13px] md:text-[12px] flex items-center gap-[7px] font-normal'>Already have an account? <Link href="/SignIn" className='text-primaryColor'>Sign In</Link></p>
+          <p className='text-[12px] md:text-[12px] flex items-center justify-start gap-[3px] md:gap-[7px] font-normal'>Already have an account? <Link href="/SignIn" className='text-primaryColor'>Sign In</Link></p>
         </div>
         <div className='px-[0px] md:px-[20px]'>
           <h1 className='text-[#4A515C] text-[28px] md:text-[32px] mb-[15px]'>Create Account</h1>
@@ -56,14 +56,13 @@ const CreateAccount: React.FC = () => {
         :
         <>
         <div className='h-[26px] flex items-center justify-between mb-[40px] md:mb-[54px] font-Grotesk'>
-          <p onClick={handleShift} className='flex gap-[10px] items-center'>
+          <p onClick={handleShift} className='flex gap-[3px] md:gap-[10px] items-center'>
             <KeyboardArrowLeftIcon />
             Back
           </p>
-          {/* <p className='text-[12px] flex items-center gap-[7px] font-normal'>Already have an account? <Link href="" className='text-primaryColor'>Sign In</Link></p> */}
         </div>
         <div className='px-[5px] md:px-[20px] text-textColor'>
-          <h1 className='text-[#4A515C] text-[28px] md:text-[32px] mb-[15px] text-center'>Verify your email Address</h1>
+          <h1 className='text-[#4A515C] text-[20px] md:text-[32px] mb-[15px] text-center'>Verify your email Address</h1>
           <p className='text-textColor2 text-[14px] mb-[20px] md:mb-[30px] font-Grotesk text-center'>We sent a 6-digit-code to your email address.</p>
           <p className='text-textColor2 text-[14px] font-bold mb-[35px] md:mb-[60px] font-Grotesk text-center'>Kindly input the code below.</p>
           <div className='flex flex-col items-center gap-[1px] font-Grotesk mb-[27px] text-textColor'>
@@ -77,7 +76,7 @@ const CreateAccount: React.FC = () => {
         </>
       </div>
       <div className={popup ? `fixed top-0 w-[100%] h-full bg-textColor/10 `: 'w-[0%]'}>
-      <div className={popup ? `w-[90%] md:w-[440px] h-auto md:h-[390px] bg-secondaryColor rounded-[20px] px-[20px] md:px-[30px] py-[40px] md:py-[63px] absolute left-[0%] md:left-[48%] top-[38%] md:top-[35%] ease-in-out duration-500` : "left-[200%] top-[38%] absolute"}>
+      <div className={popup ? `w-[90%] md:w-[440px] h-auto md:h-[390px] bg-secondaryColor rounded-[20px] px-[20px] md:px-[30px] py-[40px] md:py-[63px] absolute left-[0%] md:left-[48%] top-[25%] md:top-[35%] ease-in-out duration-500` : "left-[200%] top-[38%] absolute"}>
         <CancelOutlinedIcon onClick={handlePopup} className='absolute right-[20px] top-[20px] text-negativeAlert cursor-pointer'/>
         <div className='font-Grotesk'>
           <div className='text-textColor2 text-[14px] mt-[20px] md:mb-[30px]'>
@@ -92,7 +91,7 @@ const CreateAccount: React.FC = () => {
             <input type="email" name="" placeholder='Enter email address' className='h-[50px] md:h-[39.67px] w-[100%] border text-textColor2 pl-[5px] text-[14px] border-textColor2 rounded-[4px] placeholder:pl-[15px] placeholder:text-[11px] focus:outline-none' />
           </div>
         </div>
-        <Link className='px-[30px] py-[15px] flex items-center justify-center gap-[15px] text-[15px] md:text-[17px] font-Grotesk mb-[53px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor/80 rounded-[10px]' href="">Resend Code</Link>  
+        <Link className='px-[30px] py-[15px] flex items-center justify-center gap-[15px] text-[15px] md:text-[17px] font-Grotesk mb-[20px] md:mb-[53px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor/80 rounded-[10px]' href="">Resend Code</Link>  
       </div>
     </div>
     </div>

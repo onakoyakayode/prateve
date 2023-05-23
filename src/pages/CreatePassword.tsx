@@ -56,7 +56,7 @@ const CreatePassword: React.FC = () => {
           <p className='text-[13px] md:text-[12px] flex items-center gap-[7px] font-normal'>Already have an account? <Link href="" className='text-primaryColor'>Sign In</Link></p>
         </div>
         <div className='px-[0px] md:px-[20px]'>
-          <h1 className='text-[#4A515C] text-[28px] md:text-[32px] mb-[33px]'>Create Password!</h1>
+          <h1 className='text-[#4A515C] text-[24px] md:text-[32px] mb-[33px]'>Create Password!</h1>
           <form action="" className='flex flex-col items-start w-[full]'>
             <div className='relative flex flex-col items-start gap-[7px] font-Grotesk mb-[30px] w-[100%]'>
                 <label className='text-[15px] md:text-[16px] text-textColor2 font-bold' htmlFor="password">Password</label>
@@ -94,8 +94,8 @@ const CreatePassword: React.FC = () => {
         </div>
         </div>
     <>  
-      <div className={successMsg ? `absolute left-0 md:left-0 top-[0%] md:top-0 w-[100%] md:w-[100%] m-h-[100vh] h-[100%] bg-textColor/50 ` : "w-0"}>
-          <div className={successMsg ? " w-[90%] md:w-[420px] h-auto md:h-[390px] bg-secondaryColor rounded-[20px] px-[20px] md:px-[30px] py-[40px] md:py-[63px] absolute left-[0%] md:left-[58%] top-[50%] md:top-[35%] ease-in-out duration-500" : "absolute left-[5%] md:left-[205%] top-[35%] px-[20px] md:px-[30px] py-[40px] md:py-[63px] rounded-[20px] bg-secondaryColor  w-[90%]"}>
+      <div onClick={handleSuccessMsg} className={successMsg ? `absolute left-0 md:left-0 top-[0%] md:top-0 w-[100%] md:w-[100%] m-h-[100vh] h-[100%] bg-textColor/50 ` : "w-0"}>
+          <div className={successMsg ? " w-[90%] md:w-[420px] h-auto md:h-[390px] bg-secondaryColor rounded-[20px] px-[20px] md:px-[30px] py-[40px] md:py-[63px] absolute left-[5%] md:left-[58%] top-[50%] md:top-[35%] ease-in-out duration-500" : "absolute left-[200%] md:left-[205%] top-[50%] px-[20px] md:px-[30px] py-[40px] md:py-[63px] rounded-[20px] bg-secondaryColor  w-[90%]"}>
               <div className='flex flex-col items-center'>
                   <Image src={successIcon} alt="" className='mb-[34px]' />
                   <h2 className='text-[#4A515C] text-[32px] mb-[15px]'>Successful</h2>

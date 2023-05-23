@@ -8,8 +8,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   return (
-    <footer className='h-auto md:h-[377px] bg-primaryColor text-textColorLight py-[50px] md:py-[75px] px-[20px] md:px-[220px] font-Grotesk flex flex-col md:flex md:flex-row items-center justify-between gap-[30px] md:gap-0'>
-        <div className='flex items-start gap-[75px] w-[100%] md:w-auto'>
+    <footer className='h-auto md:h-[377px] w-[100%] md:w-auto bg-primaryColor text-textColorLight py-[50px] md:py-[75px] px-[20px] md:px-[220px] font-Grotesk flex flex-col md:flex md:flex-row items-start md:items-center justify-start md:justify-between gap-[30px] md:gap-0'>
+        <div className='flex items-start gap-[10px] md:gap-[75px] w-[100%] md:w-auto'>
             <div className='w-[100%]'>
                 <h2 className='mb-[30px] text-[18px] md:text-[20px]'>Company</h2>
                 <ul className='flex flex-col gap-[15px] opacity-80 text-[13px] md:text-[14px]'>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <Link href="">FAQ</Link>
                 </ul>
             </div>
-            <div className='w-[100%]'>
+            <div className='w-[100%] md:w-auto'>
                 <h2 className='mb-[30px] text-[18px] md:text-[20px]'>Legal</h2>
                 <ul className='flex flex-col gap-[15px] opacity-80 text-[13px] md:text-[14px]'>
                     <Link href="">Security</Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                     <Link href="">Agreement & Disclosures</Link>
                 </ul>
             </div>
-            <div className='w-[100%]'>
+            <div className='w-[100%] md:w-auto'>
                 <h2 className='mb-[30px] text-[18px] md:text-[20px]'>Legal</h2>
                 <ul className='flex flex-col gap-[15px] opacity-80 text-[13px] md:text-[14px]'>
                     <Link href="">Privacy Terms</Link>
