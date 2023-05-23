@@ -1,0 +1,35 @@
+.bg {
+    background-image: linear-gradient(270deg, #0b1820c2 50%, #010b12e9 100%) ,url('../images/black-man-black-suit-standing-cafe.png');
+    background-size: cover;
+    mix-blend-mode: darken;
+}
+
+.otpInputBbox {
+    color: black !important;
+}
+
+.otpInputContainer {
+    display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.popUpTransition {
+    transition: all ease-in-out 0.5s;
+}
+
+.inputDetails {
+    background-image: linear-gradient(270deg, rgb(6, 23, 34), #041623b7), url('../images/happy-businesswoman-talking-phone.png');
+    background-size: cover;
+}
+
+.createPassword {
+    background-image: linear-gradient(270deg, rgb(6, 23, 34), #041623b7), url('../images/african-business-man-happy-person.png');
+    background-size: cover;
+}
+
+.signIn {
+    background-image: linear-gradient(270deg, rgb(6, 23, 34), #041623b7), url('../images/signIn.png');
+    background-size: cover;
+}
