@@ -25,7 +25,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        '3xl': ['-5px -5px 0px 1px #1E81C4']
+        '3xl': ['-5px -5px 0px 1px #1E81C4'],
       },
       backgroundImage: {
         'hero-pattern': "linear-gradient(to right, #1e82c48c, #0f3f6291), url('../../src/images/black-man-black-suit-standing-cafe.png')",

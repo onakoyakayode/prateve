@@ -140,7 +140,7 @@ const SignIn = () => {
 
           <Otp />
 
-          <Link href="" className='px-[30px] py-[15px] w-[100%] font-Grotesk flex items-center justify-center gap-[15px] mt-[60px] text-[18px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor rounded-[10px] cursor-pointer'>Continue <ArrowForwardIcon /></Link>
+          <Link href="/HomeDashboard" className='px-[30px] py-[15px] w-[100%] font-Grotesk flex items-center justify-center gap-[15px] mt-[60px] text-[18px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor rounded-[10px] cursor-pointer'>Continue <ArrowForwardIcon /></Link>
           <p onClick={handleSendCode} className='text-primaryColor font-Grotesk mt-[40px] self-end text-[14px] cursor-pointer'>Didn&apos;t get code? Resend code</p>
         </div>
       </>
@@ -173,7 +173,7 @@ const SignIn = () => {
                   <p className='text-[14px] text-textColor2 font-Grotesk mb-[30px] w-[200px] text-center'>A code has been sent to your email, please confirm.</p>
         
               </div>
-              <Link className='px-[30px] py-[15px] flex items-center justify-center gap-[15px] text-[15px] md:text-[17px] font-Grotesk mb-[20px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor/80 rounded-[10px]' href="/ConfirmationPage">Yeah, Got it!</Link> 
+              <Link className='px-[30px] py-[15px] flex items-center justify-center gap-[15px] text-[15px] md:text-[17px] font-Grotesk mb-[20px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor/80 rounded-[10px]' href="/Dashboard">Yeah, Got it!</Link> 
               <p onClick={handleSendCode} className='text-negativeAlert font-Grotesk text-[12px] text-center cursor-pointer'>Nah, I Didn&apos;t Get The Code</p> 
           </div>
           </div>

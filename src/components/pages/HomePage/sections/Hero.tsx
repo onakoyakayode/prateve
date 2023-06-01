@@ -10,11 +10,11 @@ import TurquoiseCircle from '../../../../images/TurquoiseCircle.svg'
 
 const Hero = () => {
   return (
-    <div className='m-h-[91vh] h-[100%] w-[100%] md:h-87vh relative z-0 overflow-hidden px-[20px] md:px-[165px] pt-[80px] md:py-[93.49px]'>
-      <div className='flex flex-col md:flex md:flex-row items-center md:items-start gap-0 justify-center z-20 relative'>
+    <div className='m-h-[91vh] h-[100%] top-[70px] md:top-[102.51px] w-[100%] md:h-[100vh] relative z-0 overflow-hidden px-[20px] md:px-[165px] pt-[80px] md:py-[93.49px]'>
+      <div className='flex flex-col md:flex md:flex-row items-center md:items-start gap-0 md:gap-[50px] justify-center z-20 relative'>
         <div className='w-[100%] md:w-[40%]'>
           <h1 className='text-[42px] md:text-[64px] text-textColor w-[100%] md:w-[565px] h-auto md:h-[154px] font-bold leading-[120%] mb-[24px] md:mb-[36px]'>Make <span className='text-primaryColor'>your money</span> work for you...</h1>
-          <p className=' font-Grotesk font-normal text-[#515151] w-[100%] md:w-[434px] h-[76px] text-[17px] md:-[20px] leading-[190%] mb-[59px]'>We’re here to help you get loans with ease at no cost, with little or no interest rate....</p>
+          <p className=' font-Grotesk font-normal text-[#515151] w-[100%] md:w-[434px] h-[76px] text-[17px] md:-[20px] leading-[190%] mb-[59px]'>We&apos;re here to help you get loans with ease at no cost, with little or no interest rate....</p>
           <div className='flex flex-col md:flex md:flex-row items-start md:items-center gap-[20px] font-Grotesk'>
             <Link className='px-[30px] py-[15px] text-[16px] flex items-center justify-center gap-[15px] h-[60px] w-[100%] md:w-auto bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor rounded-[10px]' href='/CreateAccount'>Get Started <ArrowForwardIcon /></Link>
             <Link className='px-[30px] py-[15px] text-[16px] flex items-center justify-center gap-[15px] h-[60px] w-[100%] md:w-auto text-primaryColor rounded-[10px] border-solid border-2 border-primaryColor' href='/SignIn'>Sign In <ArrowForwardIcon /></Link>

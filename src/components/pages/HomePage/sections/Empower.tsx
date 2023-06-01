@@ -13,7 +13,7 @@ const Empower = () => {
   return (
     <div className='flex flex-col'>
         <div className='h-[350px] w-full bg-primaryColor flex flex-col items-center justify-start relative px-[20px]'>
-            <h1 className='text-[28px] md:text-[32px] h-[80px] md:h-[90px] w-[100%] md:w-[441px] py-[50px] text-textColorLight opacity-80 text-center mb-[50px] md:mb-[25px]'>We Empower Africans in Creating Real Wealth</h1>
+            <h1 className='text-[28px] md:text-[32px] h-[80px] md:h-[90px] w-[100%] md:w-[441px] py-[50px] text-textColorLight opacity-80 text-center mb-[50px] md:mb-[60px]'>We Empower Africans in Creating Real Wealth</h1>
             <p className='h-auto md:h-[104px] w-[100%] md:w-[555px] text-[15px] md:text-[16px] text-textColorLight opacity-80 font-Grotesk font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies tristique mollis lacus ultrices feugiat curabitur tempus arcu, est. Risus mauris ultrices tellus ante purus tortor sem sit purus. Non tempus libero cras sed congue mi. Leo arcu sed maecenas aliquet ut quam.</p>
             <Image src={empowerLeft} alt='svg' className='absolute left-0 top-0' />
             <Image src={empowerRight} alt='svg' className='absolute right-0 top-0 z-20'/>

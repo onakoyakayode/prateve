@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className='bg-secondaryColor hidden md:flex h-[102.51px] items-center justify-between px-[70px] py-[15px] font-Grotesk'>
+    <nav className='bg-secondaryColor fixed top-0 left-0 w-full z-50 hidden md:flex h-[102.51px] items-center justify-between px-[70px] py-[15px] font-Grotesk'>
         <Image
         src={Logo}
         alt='prateve'
@@ -30,7 +30,7 @@ const Navbar = () => {
         </ul>
         <Link className='px-[30px] py-[15px] flex gap-[15px] bg-gradient-to-r from-primaryColor to-primaryColor2 text-secondaryColor rounded-[10px]' href="/CreateAccount">Get Started <ArrowForwardIcon /></Link>
     </nav>
-    <nav className='px-[10px] bg-secondaryColor relative h-[70px] flex flex-col shadow-lg shadow-primaryColor2/20 items-start md:hidden font-Grotesk'>
+    <nav className='px-[10px] bg-secondaryColor top-0 left-0 w-full z-50 relative h-[70px] flex flex-col shadow-lg shadow-primaryColor2/20 items-start md:hidden font-Grotesk'>
       <Image
           src={Logo}
           alt='prateve'

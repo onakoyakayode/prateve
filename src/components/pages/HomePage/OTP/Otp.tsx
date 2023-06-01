@@ -38,16 +38,16 @@ const Otp: FC<Props> = (props):JSX.Element => {
       <div className='flex justify-center gap-[10px] items-center w-[100%]'>
         {otp.map((_, index) => {
             return (
-                <React.Fragment key={index}>
-                    <input 
-                        ref={index === activeOTPIndex ? inputRef : null}
-                        type='number'
-                        className='w-[30px] md:w-[40px] h-[30px] md:h-[40px] text-center font-semibold text-textColor2 border rounded-[3px] bg-transparent border-textColor2/40 focus:outline-none text-[14px] md:text-[15px] transition spin-button-none'
-                        onChange={handleChange}
-                        onKeyDown={(e) => handleOneKeyDown(e, index)}
-                        value={otp[index]}
-                    />
-                </React.Fragment>
+              <React.Fragment key={index}>
+                  <input 
+                      ref={index === activeOTPIndex ? inputRef : null}
+                      type='number'
+                      className='w-[30px] md:w-[40px] h-[30px] md:h-[40px] text-center font-semibold text-textColor2 border rounded-[3px] bg-transparent border-textColor2/40 focus:outline-none text-[14px] md:text-[15px] transition spin-button-none'
+                      onChange={handleChange}
+                      onKeyDown={(e) => handleOneKeyDown(e, index)}
+                      value={otp[index]}
+                  />
+              </React.Fragment>
             )
         })}
       </div>
